@@ -1,0 +1,41 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "properties": {
+      "content": {
+        "type": ["object", "string"]
+      },
+      "header": {
+        "type": "object",
+        "properties": {
+          "signature": {
+            "type": "string"
+          },
+          "post_id": {
+            "type": "integer"
+          },
+          "update_id": {
+            "type": "integer"
+          },
+          "address": {
+            "type": "string"
+          },
+          "output_hash": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "signature",
+          "post_id",
+          "update_id",
+          "address",
+          "output_hash"
+        ]
+      }
+    },
+    "required": [
+      "content",
+      "header"
+    ]
+}
+  
